@@ -59,6 +59,9 @@ class SpeechManager {
         //show record
         void showRecord();
 
+        //display funny board
+        void displayLeaderboard();
+
         //first round speaker
         vector<int>v1;
 
@@ -73,6 +76,10 @@ class SpeechManager {
 
         //compete round
         int m_Index;
+
+        //board data
+        vector<string> titles;
+        multimap<double, int, greater<double>> groupScore;
 
 
 };
